@@ -1,0 +1,1231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luxury Silk Rugs &amp; Pashmina from Kashmir | Kashmir Imperial</title>
+<meta name="description" content="Hand-knotted silk rugs and authentic Pashmina shawls, made by master artisans in Srinagar. Bespoke sizes, private video viewings, delivered worldwide.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preconnect" href="https://videos.pexels.com">
+<!-- Boska (display): knife-cut, high-contrast serifs; used for headings and product names only.
+     Switzer (text): a quiet neo-grotesk with tabular figures, so prices, sizes and knot counts line up. -->
+<link href="https://api.fontshare.com/v2/css?f[]=boska@400,500&f[]=switzer@400,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.css">
+<style>
+/* ───────── Tokens ─────────
+   A neutral base does most of the work. The palette appears as full blocks, one job each:
+   lead = madder (rug dye; the doc's burgundy band, primary action)
+   support = walnut (Kashmiri walnut; the bespoke band)
+   pop = zari (metal thread in shawls; the doc's gold text) */
+:root{
+  --white:#FFFFFF; --grey-50:#F3F3F3; --line:#E0E0E0;
+  --black:#141414; --line-dark:#2E2E2E;
+  --text:#1A1A1A; --text-2:#505050; --text-3:#6B6B6B;
+  --text-inv:#F5F5F5; --text-inv-2:#BDBDBD; --text-inv-3:#959595;
+  --madder:#6B1D29; --madder-press:#561520;
+  --walnut:#2B1E16; --walnut-text-2:#CFC5BA;
+  --zari:#C9A45C; --zari-on-madder:#D9B877;
+  --display:'Boska', Georgia, 'Times New Roman', serif;
+  --text-font:'Switzer', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --max:1600px; --m:clamp(16px, 4vw, 64px); --gap:clamp(14px, 2vw, 32px);
+  --pad:clamp(56px, 7vw, 112px); --head-h:72px;
+  --ease:cubic-bezier(.65,0,.35,1);
+}
+
+/* ───────── Base ───────── */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--text);font:400 17px/1.6 var(--text-font);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);font-weight:400;margin:0;text-wrap:balance}
+h2{font-size:clamp(34px,3.6vw,60px);line-height:1.02;letter-spacing:-.02em}
+h3{font-size:clamp(20px,1.6vw,26px);line-height:1.15;letter-spacing:-.005em}
+p{margin:0 0 1em;max-width:60ch}
+p:last-child{margin-bottom:0}
+ul,ol,dl,dd,figure,fieldset{margin:0;padding:0}
+ul,ol{list-style:none}
+fieldset{border:0;min-width:0}
+button,input,select{font:inherit}
+:focus-visible{outline:2px solid var(--zari);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--m)}
+.section{padding:var(--pad) 0}
+.lead{font-size:clamp(17px,1.25vw,20px);line-height:1.5;color:var(--text-2)}
+.spec{font-size:14px;line-height:1.5;color:var(--text-2);font-variant-numeric:tabular-nums}
+.tbc{text-decoration:underline dotted var(--zari);text-decoration-thickness:1.5px;text-underline-offset:.22em;cursor:help}
+.on-grey{background:var(--grey-50)}
+.on-black{background:var(--black);color:var(--text-inv)}
+.on-black .lead,.on-black .spec{color:var(--text-inv-2)}
+.on-walnut{background:var(--walnut);color:var(--text-inv)}
+.on-walnut .lead,.on-walnut .spec{color:var(--walnut-text-2)}
+.frame{position:relative;overflow:hidden;background:#d9d9d9;margin:0}
+.on-black .frame,.on-walnut .frame{background:#222}
+.frame img,.frame video{width:100%;height:100%;object-fit:cover}
+.scene{position:relative;min-height:100svh;padding-top:calc(var(--head-h) + 20px);padding-bottom:24px}
+
+/* Buttons: square, one label per intent */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border:1px solid transparent;border-radius:2px;font:500 15px/1 var(--text-font);text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color .15s ease-out,color .15s ease-out,border-color .15s ease-out}
+.btn:active{transform:scale(.98)}
+.btn[disabled]{cursor:not-allowed;opacity:1;background:var(--grey-50);color:var(--text-3);border-color:var(--line)}
+.btn-lead{background:var(--madder);color:#fff}.btn-lead:hover{background:var(--madder-press)}
+.btn-dark{background:var(--black);color:#fff}.btn-dark:hover{background:#000}
+.btn-light{background:#fff;color:var(--black)}.btn-light:hover{background:var(--grey-50)}
+.btn-line{border-color:currentColor;color:inherit;background:transparent}.btn-line:hover{background:rgba(127,127,127,.14)}
+.btn-sm{min-height:44px;padding:0 16px;font-size:14px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.link{font-weight:500;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.3em;text-decoration-color:var(--zari)}
+.link:hover{text-decoration-thickness:2px}
+
+/* ───────── Shop header ───────── */
+.progress{position:fixed;left:0;top:0;right:0;height:2px;z-index:61;background:var(--zari);transform:scaleX(0);transform-origin:left}
+.site-head{position:fixed;inset:0 0 auto;z-index:60;color:#fff;border-bottom:1px solid transparent;transition:background-color .25s ease-out,color .25s ease-out,border-color .25s ease-out}
+.site-head.is-solid{background:var(--black);border-color:var(--line-dark)}
+.site-head.is-solid[data-tone="light"]{background:#fff;color:var(--text);border-color:var(--line)}
+.site-head .wrap{display:flex;align-items:center;gap:28px;height:var(--head-h)}
+.wordmark{font:500 14px/1 var(--display);letter-spacing:.28em;text-transform:uppercase;text-decoration:none;white-space:nowrap}
+.nav{display:flex;gap:26px;margin-right:auto}
+.nav a{font-size:15px;text-decoration:none}
+.nav a:hover,.tool:hover{text-decoration:underline;text-underline-offset:.35em;text-decoration-thickness:1px}
+.menu-extra{display:none}
+.tools{display:flex;align-items:center;gap:18px}
+.tool{background:none;border:0;color:inherit;font:500 15px var(--text-font);min-height:44px;padding:0 2px;cursor:pointer;white-space:nowrap}
+.tool .n{font-variant-numeric:tabular-nums}
+.menu-btn{display:none}
+
+/* ───────── 1. Hero ───────── */
+.hero{position:relative;height:100svh;min-height:560px;color:#fff;background:var(--black);overflow:hidden}
+.hero-media{position:absolute;inset:0;clip-path:inset(0% 0% 0% 0%);overflow:hidden}
+.hero-media img,.hero-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-media video{opacity:0;transition:opacity .8s ease-out}
+.hero-media video.is-ready{opacity:1}
+.hero-media::after{content:"";position:absolute;inset:auto 0 0 0;height:75%;background:linear-gradient(0deg,rgba(10,10,10,.92) 0%,rgba(10,10,10,.55) 50%,rgba(10,10,10,0) 100%)}
+.hero-media::before{content:"";position:absolute;inset:0 0 auto 0;height:150px;z-index:1;background:linear-gradient(180deg,rgba(10,10,10,.55),rgba(10,10,10,0))}
+.hero-body{position:absolute;left:0;right:0;bottom:0;z-index:2;padding-bottom:clamp(20px,3vh,36px)}
+.hero h1{font-size:clamp(40px,min(6vw,10.5vh),112px);line-height:.98;letter-spacing:-.03em;max-width:18ch}
+.hero-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 40px;align-items:end;margin-top:clamp(14px,2.4vh,28px)}
+.hero-row p{margin:0;font-size:clamp(16px,1.2vw,19px);color:#E6E6E6;max-width:46ch}
+.trust{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(16px,3vh,32px);border-top:1px solid rgba(255,255,255,.28)}
+.trust li{padding:12px 16px 0 0;font-size:14px;color:#E0E0E0}
+.trust li+li{padding-left:16px;border-left:1px solid rgba(255,255,255,.28)}
+
+/* ───────── 2. Two crafts (category tiles) ───────── */
+.crafts-head{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--gap);align-items:end;margin-bottom:clamp(24px,3vw,40px)}
+.crafts-head h2{font-size:clamp(38px,4.4vw,76px)}
+.crafts-head .lead{margin:0}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--gap)}
+.tile-big{grid-column:span 2}
+.tile-big .frame{aspect-ratio:16/10;margin-bottom:14px}
+.tile-big h3{margin-bottom:6px}
+.tile-big p{color:var(--text-2);font-size:16px;margin-bottom:14px}
+.tile-small{grid-column:span 2;display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:center;text-decoration:none;border-top:1px solid var(--line);padding-top:var(--gap)}
+.tile-small .frame{aspect-ratio:1/1}
+.tile-small:hover h3{text-decoration:underline;text-underline-offset:.2em;text-decoration-thickness:1px}
+.tile-small p{margin:4px 0 0;color:var(--text-2);font-size:15px}
+
+/* ───────── 3 + 3b. Product grids ───────── */
+.row-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 40px;margin-bottom:clamp(22px,3vw,40px)}
+.row-head h2{margin-bottom:8px}
+.row-head .lead{margin:0;max-width:56ch}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(24px,2.6vw,44px) var(--gap)}
+.prod .media{position:relative}
+.prod .img{display:block;text-decoration:none}
+.prod .frame{aspect-ratio:4/5}
+.prod .alt{position:absolute;inset:0;background:var(--img) var(--pos,70% 40%)/240% no-repeat;opacity:0;transition:opacity .25s ease-out}
+.prod:hover .alt,.prod:focus-within .alt{opacity:1}
+@media (hover:none){.prod .alt{display:none}}
+.save{position:absolute;top:10px;right:10px;z-index:2;background:#fff;color:var(--text);border:0;border-radius:2px;font:500 13px var(--text-font);min-height:36px;padding:0 12px;cursor:pointer}
+.save[aria-pressed="true"]{background:var(--black);color:#fff}
+.info{padding-top:12px}
+.line{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.line h3{font-size:clamp(19px,1.5vw,24px)}
+.line h3 a{text-decoration:none}
+.line h3 a:hover{text-decoration:underline;text-underline-offset:.2em;text-decoration-thickness:1px}
+.price{font:500 16px/1.2 var(--text-font);font-variant-numeric:tabular-nums;white-space:nowrap;margin:0}
+.prod .spec{margin:6px 0 12px}
+.buy{display:flex;align-items:center;gap:16px}
+.buy .add{flex:1}
+.swatches{display:flex;align-items:center;gap:8px;margin:0 0 12px}
+.swatches label{display:inline-flex;cursor:pointer;padding:5px}
+.swatches input{position:absolute;opacity:0;width:1px;height:1px}
+.swatches .dot{display:block;width:20px;height:20px;border-radius:50%;background:var(--sw);border:1px solid rgba(0,0,0,.25)}
+.swatches input:checked + .dot{outline:2px solid var(--black);outline-offset:2px}
+.swatches input:focus-visible + .dot{outline:2px solid var(--zari);outline-offset:3px}
+.swname{font-size:14px;color:var(--text-2);margin-left:4px}
+
+/* ───────── Service strip ───────── */
+.service{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(40px,5vw,72px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.service li{padding:20px 24px 20px 0}
+.service li+li{padding-left:24px;border-left:1px solid var(--line)}
+.service h3{font:500 16px/1.3 var(--text-font);margin-bottom:6px}
+.service p{font-size:15px;line-height:1.5;color:var(--text-2);margin:0}
+
+/* ───────── 4. Shop by size / room ───────── */
+.sizes-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 40px;margin-bottom:18px}
+.sizes-head .lead{margin:0}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:20px}
+.tab{background:none;border:0;border-bottom:2px solid transparent;font:500 16px var(--text-font);padding:0 16px;min-height:44px;cursor:pointer;color:var(--text-2)}
+.tab[aria-selected="true"]{color:var(--text);border-bottom-color:var(--black)}
+.js .panels.is-off{display:none}
+.panels{display:flex;gap:10px;height:clamp(300px,52vh,520px)}
+.panel{position:relative;flex:1 1 0;min-width:0;overflow:hidden;text-decoration:none;color:#fff;transition:flex-grow .7s var(--ease);background:#222}
+.panel.is-open{flex-grow:3.4}
+.panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.panel::after{content:"";position:absolute;inset:auto 0 0 0;height:60%;background:linear-gradient(0deg,rgba(0,0,0,.72),rgba(0,0,0,0))}
+.panel-label{position:absolute;left:16px;right:16px;bottom:14px;z-index:1}
+.panel-label h3{font-size:clamp(20px,1.8vw,30px)}
+.panel-label span{display:block;font-size:14px;color:#E6E6E6;white-space:nowrap;opacity:0;transform:translateY(8px);transition:opacity .4s ease-out .15s,transform .4s ease-out .15s}
+.panel.is-open .panel-label span{opacity:1;transform:none}
+
+/* ───────── 5. Bespoke ───────── */
+.bespoke{position:relative;overflow:hidden;background:var(--walnut)}
+.bespoke .scene{display:flex;flex-direction:column;justify-content:space-between;color:#fff}
+.bespoke-film{position:absolute;inset:0;clip-path:inset(0% 0% 0% 0%)}
+.bespoke-film video{width:100%;height:100%;object-fit:cover}
+.bespoke-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(28,19,13,.92) 0%,rgba(28,19,13,.55) 55%,rgba(28,19,13,.35) 100%)}
+.bespoke-top,.bespoke-bottom{position:relative;z-index:2}
+.bespoke-top h2{font-size:clamp(38px,4.6vw,80px);max-width:16ch;margin-bottom:12px}
+.bespoke-top .lead{color:#E9E1D8}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--gap);counter-reset:s;margin-bottom:24px}
+.steps li{counter-increment:s;padding-top:14px;border-top:1px solid rgba(255,255,255,.35)}
+.steps li::before{content:counter(s);display:block;font:400 clamp(34px,3.4vw,56px)/1 var(--display);color:var(--zari);margin-bottom:8px}
+.steps h3{margin-bottom:4px}
+.steps p{color:#E2D9CF;font-size:16px}
+.bespoke-foot{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px}
+.bespoke-foot p{margin:0;color:#E2D9CF}
+
+/* ───────── 6. Proof ───────── */
+.proof .scene{display:flex;align-items:center}
+.proof-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,72px);align-items:center;width:100%}
+.loupe-fig{height:clamp(260px,calc(100svh - 200px),640px);cursor:crosshair;touch-action:pan-y}
+.loupe{position:absolute;left:0;top:0;width:clamp(140px,14vw,220px);aspect-ratio:1;border-radius:50%;border:2px solid #fff;background-repeat:no-repeat;pointer-events:none;opacity:0;transition:opacity .15s ease-out;z-index:2}
+.loupe-fig.is-on .loupe{opacity:1}
+.loupe-hint{position:absolute;left:12px;top:12px;z-index:2;background:#fff;color:var(--text);font-size:13px;padding:6px 10px;border-radius:2px;pointer-events:none}
+.proof h2{font-size:clamp(38px,4.2vw,72px);margin-bottom:14px}
+.proofs{display:grid;grid-template-columns:1fr 1fr;gap:20px var(--gap);margin:26px 0;padding-top:20px;border-top:1px solid var(--line)}
+.proofs dt{font:400 22px/1.2 var(--display);margin-bottom:4px}
+.proofs dd{color:var(--text-2);font-size:15px}
+
+/* ───────── 7. Artisans + 8. Founder ───────── */
+.artisans{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:var(--gap);align-items:start}
+.artisans-intro{position:sticky;top:calc(var(--head-h) + 32px)}
+.artisans-intro h2{margin-bottom:14px}
+.columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap);align-items:start}
+.columns li:nth-child(2){margin-top:120px}
+.columns li:nth-child(3){margin-top:40px}
+.columns .frame{aspect-ratio:3/4;margin-bottom:10px}
+.columns h3{font-size:20px}
+.founder{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(24px,4vw,72px);align-items:center;margin-top:clamp(48px,6vw,96px)}
+.founder .frame{aspect-ratio:5/4}
+.founder h2{margin-bottom:14px}
+.founder blockquote{margin:26px 0;font:400 clamp(28px,2.8vw,46px)/1.18 var(--display);letter-spacing:-.015em}
+.founder blockquote footer{margin-top:12px;font:400 14px/1.4 var(--text-font);color:var(--text-3);letter-spacing:0}
+
+/* ───────── 9 + 10. Trade, project (stacking cards) ───────── */
+.stack{display:grid;gap:28px}
+.card{position:sticky;top:calc(var(--head-h) + 16px);min-height:calc(100svh - var(--head-h) - 40px);display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(24px,4vw,64px);align-items:center;padding:clamp(24px,3.5vw,56px);transform-origin:50% 0}
+.card-dark{background:var(--black);color:var(--text-inv)}
+.card-dark .lead{color:var(--text-inv-2)}
+.card-light{background:#fff;color:var(--text)}
+.card .frame{height:clamp(240px,calc(100svh - 230px),640px)}
+.card h2{margin-bottom:14px}
+.trade-list{margin:22px 0 26px;border-top:1px solid var(--line-dark)}
+.trade-list li{padding:13px 0;border-bottom:1px solid var(--line-dark);font-size:18px}
+.project-label{font-size:14px;color:var(--madder);margin:0 0 10px}
+.pip{position:absolute;right:16px;bottom:16px;width:32%;aspect-ratio:3/4;border:4px solid #fff;overflow:hidden;z-index:2}
+.pip img{width:100%;height:100%;object-fit:cover}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;margin:22px 0;padding-top:16px;border-top:1px solid var(--line)}
+.facts dt{font-size:13px;color:var(--text-3)}
+.facts dd{font:400 clamp(22px,2vw,30px)/1.2 var(--display)}
+
+/* ───────── 12 + 13. Guides, FAQ ───────── */
+.guides-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,72px);align-items:start}
+.guides-media{position:sticky;top:calc(var(--head-h) + 32px);aspect-ratio:4/5;max-height:72svh}
+.guides-media img{position:absolute;inset:0;opacity:0;transition:opacity .7s ease-out}
+.guides-media img.is-on{opacity:1}
+.guides h2{margin-bottom:24px}
+.guide{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 24px;align-items:end;padding:clamp(24px,5vh,52px) 0;border-top:1px solid var(--line);text-decoration:none;transition:opacity .4s ease-out}
+.guides ul:not(:hover) .guide:not(.is-on),.guides ul:hover .guide:not(:hover){opacity:.45}
+.guide h3{font-size:clamp(26px,2.6vw,42px)}
+.guide p{margin:6px 0 0;color:var(--text-2)}
+.guide .go{font-weight:500;text-decoration:underline;text-decoration-color:var(--zari);text-underline-offset:.3em;white-space:nowrap}
+.guide img.thumb{display:none}
+.faq-wrap{margin-top:clamp(48px,6vw,96px)}
+.faq-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,72px);align-items:start}
+.faq h2{position:sticky;top:calc(var(--head-h) + 32px)}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:20px 0;font:400 clamp(19px,1.5vw,24px)/1.3 var(--display)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;font:400 24px/1 var(--text-font);color:var(--text-2);transition:transform .25s ease-out}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq-body{overflow:hidden}
+.faq-body p{padding-bottom:20px;color:var(--text-2)}
+
+/* ───────── 14. CTA ───────── */
+.cta-wrap{background:var(--grey-50)}
+.cta{background:var(--madder);color:#fff;clip-path:inset(0% 0% 0% 0%);padding:clamp(72px,11vw,170px) 0}
+.cta h2{color:var(--zari-on-madder);font-size:clamp(48px,8vw,140px);line-height:.95;letter-spacing:-.035em;margin-bottom:clamp(28px,4vw,56px)}
+.cta-row{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:var(--gap);align-items:end}
+.cta p{font-size:clamp(18px,1.4vw,22px);margin:0}
+
+/* ───────── Footer ───────── */
+.foot{padding:clamp(48px,6vw,80px) 0 28px;overflow:hidden}
+.foot-top{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--gap) clamp(24px,5vw,80px);padding-bottom:clamp(32px,4vw,56px);border-bottom:1px solid var(--line-dark)}
+.foot-top h3{font:400 clamp(26px,2.4vw,38px)/1.15 var(--display);margin-bottom:8px}
+.foot-top p{color:var(--text-inv-2);font-size:15px}
+.news{display:flex;gap:8px;align-items:stretch;flex-wrap:wrap}
+.news input{flex:1 1 220px;min-height:48px;padding:0 14px;background:transparent;color:#fff;border:1px solid #666;border-radius:2px}
+.news input::placeholder{color:#999}
+.news input[aria-invalid="true"]{border-color:#E58B8B}
+.msg{flex-basis:100%;min-height:1.5em;margin:0;font-size:14px;color:var(--text-inv-2)}
+.msg.err{color:#F2A6A6}
+.foot-grid{display:grid;grid-template-columns:minmax(0,4fr) repeat(4,minmax(0,2fr));gap:var(--gap);padding-top:clamp(32px,4vw,56px)}
+.foot-grid p{color:var(--text-inv-2);font-size:15px;margin-top:12px}
+.foot h4{font:500 13px/1.4 var(--text-font);color:var(--zari);margin-bottom:10px}
+.foot li{margin-bottom:6px}
+.foot a{text-decoration:none;font-size:15px;color:var(--text-inv-2)}
+.foot a:hover{color:#fff;text-decoration:underline}
+.giant{font:400 clamp(48px,12.4vw,230px)/.85 var(--display);letter-spacing:-.045em;white-space:nowrap;margin-top:clamp(36px,5vw,72px);overflow:hidden;padding-bottom:.06em}
+.foot-legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:20px;padding-top:18px;border-top:1px solid var(--line-dark);font-size:13px;color:var(--text-inv-3)}
+.foot-legal a{font-size:13px}
+.wa{position:fixed;right:16px;bottom:16px;z-index:55;display:none;align-items:center;min-height:46px;padding:0 16px;border-radius:2px;background:#1E6B47;color:#fff;font:500 15px var(--text-font);text-decoration:none;transition:opacity .25s ease-out,transform .25s ease-out}
+.wa.is-tucked{opacity:0;transform:translateY(16px);pointer-events:none}
+
+/* ───────── Bag + saved drawer, search ───────── */
+.scrim{position:fixed;inset:0;background:rgba(10,10,10,.5);opacity:0;visibility:hidden;z-index:90;transition:opacity .3s ease-out,visibility 0s .3s}
+.scrim.is-on{opacity:1;visibility:visible;transition:opacity .3s ease-out}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100vw);background:#fff;color:var(--text);z-index:100;display:flex;flex-direction:column;transform:translateX(100%);visibility:hidden;transition:transform .35s var(--ease),visibility 0s .35s}
+.drawer.is-open{transform:none;visibility:visible;transition:transform .35s var(--ease)}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 20px;height:var(--head-h);border-bottom:1px solid var(--line);flex:none}
+.dtabs{display:flex;gap:6px}
+.dtab{background:none;border:0;border-bottom:2px solid transparent;font:500 16px var(--text-font);color:var(--text-2);min-height:44px;padding:0 10px;cursor:pointer}
+.dtab[aria-selected="true"]{color:var(--text);border-bottom-color:var(--black)}
+.close{background:none;border:0;font:500 15px var(--text-font);min-height:44px;padding:0 4px;cursor:pointer;color:var(--text)}
+.drawer-body{flex:1;overflow:auto;padding:4px 20px}
+.empty{padding:28px 0}
+.empty p{color:var(--text-2)}
+.row{display:grid;grid-template-columns:72px minmax(0,1fr) auto;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);align-items:start}
+.row img{width:72px;aspect-ratio:4/5;object-fit:cover}
+.row h4{font-size:19px;line-height:1.2;margin-bottom:2px}
+.row .spec{margin:0 0 8px}
+.row .acts{display:flex;align-items:center;gap:12px;font-size:14px}
+.row button{background:none;border:0;padding:0;min-height:32px;min-width:32px;font:500 14px var(--text-font);text-decoration:underline;text-underline-offset:.25em;cursor:pointer;color:var(--text)}
+.row button.step{text-decoration:none;font-size:18px;border:1px solid var(--line);border-radius:2px}
+.row .price{text-align:right}
+.drawer-foot{padding:16px 20px 20px;border-top:1px solid var(--line);flex:none}
+.sub{display:flex;justify-content:space-between;font-weight:500;margin-bottom:6px;font-variant-numeric:tabular-nums}
+.drawer-foot p{font-size:13px;color:var(--text-3);margin-bottom:12px}
+.drawer-foot .btn{width:100%}
+.drawer-foot .link{display:inline-block;margin-top:12px;font-size:15px}
+.search{position:fixed;inset:0 0 auto 0;z-index:100;background:#fff;color:var(--text);max-height:100svh;overflow:auto;transform:translateY(-100%);visibility:hidden;transition:transform .35s var(--ease),visibility 0s .35s}
+.search.is-open{transform:none;visibility:visible;transition:transform .35s var(--ease)}
+.search-in{display:flex;align-items:center;gap:16px;height:var(--head-h);border-bottom:1px solid var(--line)}
+.search-in:focus-within{border-bottom-color:var(--black)}
+.search-in input{flex:1;min-width:0;border:0;background:transparent;outline:0;font:400 clamp(24px,3vw,40px)/1 var(--display);color:var(--text)}
+.search-in input::placeholder{color:#9a9a9a}
+.results{padding:12px 0 28px;min-height:220px}
+.results .hint{color:var(--text-2);font-size:15px;margin:10px 0}
+.res{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:16px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.res img{width:64px;aspect-ratio:4/5;object-fit:cover}
+.res h4{font-size:20px}
+.res:hover h4{text-decoration:underline;text-underline-offset:.2em;text-decoration-thickness:1px}
+.res .spec{margin:0}
+.sugg{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:8px}
+
+/* ───────── Responsive ───────── */
+@media (min-width:1700px){ body{font-size:18px} }
+@media (max-width:1280px){ .tools-cta{display:none} }
+@media (max-width:1180px){
+  .nav{gap:18px}
+  .grid4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .crafts-head,.artisans,.founder,.guides-grid,.faq-grid,.card,.proof-grid,.foot-top{grid-template-columns:1fr}
+  .artisans-intro,.faq h2{position:static}
+  .guides-media{display:none}
+  .guide{grid-template-columns:120px minmax(0,1fr) auto;align-items:center;padding:16px 0}
+  .guide img.thumb{display:block;width:120px;aspect-ratio:4/3;object-fit:cover}
+  .card{position:relative;top:auto;min-height:0}
+  .card .frame{height:auto;aspect-ratio:16/10}
+  .loupe-fig{height:auto;aspect-ratio:3/2}
+  .service{grid-template-columns:1fr 1fr}
+  .service li:nth-child(3){border-left:0;padding-left:0}
+  .service li:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media (max-width:900px){
+  .nav{display:none;margin:0}
+  .tools .tool-search,.tools .tool-saved{display:none}
+  .menu-btn{display:inline-block}
+  .tools{margin-left:auto}
+  .nav.is-open{display:flex;flex-direction:column;gap:0;position:absolute;top:var(--head-h);left:0;right:0;background:var(--black);color:#fff;padding:8px var(--m) 20px;border-bottom:1px solid var(--line-dark)}
+  .nav.is-open a{font:400 28px/1.2 var(--display);padding:10px 0}
+  .nav.is-open .menu-extra{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;padding-top:14px;margin-top:8px;border-top:1px solid var(--line-dark)}
+  .menu-extra .tool{color:#fff}
+  .hero-row,.cta-row{grid-template-columns:1fr}
+  .trust{grid-template-columns:1fr 1fr}
+  .trust li,.trust li+li{padding:10px 10px 10px 0;border-left:0;border-bottom:1px solid rgba(255,255,255,.2)}
+  .steps{grid-template-columns:1fr 1fr}
+  .panels{flex-direction:column;height:auto}
+  .panel{flex:none;height:96px;transition:height .6s var(--ease)}
+  .panel.is-open{height:260px}
+  .panel-label span{opacity:1;transform:none}
+  .tile-big,.tile-small{grid-column:1 / -1}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .foot-grid > :first-child{grid-column:1 / -1}
+  .wa{display:inline-flex}
+}
+@media (max-width:700px){
+  body{font-size:16px}
+  .scene{min-height:0}
+  .bespoke .scene{min-height:100svh}
+  .grid4{gap:22px 12px}
+  .line{flex-direction:column;gap:2px}
+  .prod .spec{font-size:13px}
+  .buy{flex-wrap:wrap;gap:8px 12px}
+  .buy .add{flex:1 1 100%}
+  .tile-small{grid-template-columns:88px minmax(0,1fr)}
+  .steps{grid-template-columns:1fr;gap:14px}
+  .steps li::before{font-size:30px}
+  .proofs{grid-template-columns:1fr}
+  .columns{grid-template-columns:repeat(3,72%);overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(-1 * var(--m));padding:0 var(--m)}
+  .columns li{scroll-snap-align:start}
+  .columns li:nth-child(n){margin-top:0}
+  .guide{grid-template-columns:88px minmax(0,1fr)}
+  .guide img.thumb{width:88px}
+  .guide .go{grid-column:2}
+  .hero-row .actions .btn{flex:1 1 auto}
+  .pip{width:38%}
+  .service{grid-template-columns:1fr}
+  .service li,.service li+li{padding:16px 0;border-left:0;border-top:1px solid var(--line)}
+  .service li:first-child{border-top:0}
+  .facts{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.15s !important}
+}
+</style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Organization","@id":"#org","name":"Kashmir Imperial","url":"/","founder":{"@id":"#founder"},"address":{"@type":"PostalAddress","addressLocality":"Srinagar","addressRegion":"Jammu and Kashmir","addressCountry":"IN"}},
+ {"@type":"Person","@id":"#founder","name":"Ittender Singh","jobTitle":"Founder","worksFor":{"@id":"#org"}},
+ {"@type":"WebSite","@id":"#site","name":"Kashmir Imperial","url":"/","publisher":{"@id":"#org"},"potentialAction":{"@type":"SearchAction","target":"/search/?q={query}","query-input":"required name=query"}},
+ {"@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"What makes Kashmiri silk rugs special?","acceptedAnswer":{"@type":"Answer","text":"Kashmiri silk rugs are knotted by hand in pure silk, one knot at a time. Fine knotting gives sharp detail, and natural silk has a soft sheen that changes with the light. Many \"silk\" rugs sold online are machine-made from viscose. These look similar at first but wear and fade quickly."}},
+  {"@type":"Question","name":"How much does a hand-knotted silk rug cost?","acceptedAnswer":{"@type":"Answer","text":"Our silk rugs start from [₹ X]. The price depends on size, knot count and design, because these decide how long a rug takes to make. A large, finely knotted rug can spend many months on the loom. Send us an enquiry for an exact price, including delivery to your country."}},
+  {"@type":"Question","name":"How can I tell if a silk rug is real?","acceptedAnswer":{"@type":"Answer","text":"Turn the rug over. A hand-knotted rug shows small, slightly uneven knots on the back, and the fringe is part of the rug, not sewn on. Real silk feels cool and smooth. Viscose, often sold as \"art silk\", feels slippery and loses its shine. Every Kashmir Imperial rug comes with a certificate."}},
+  {"@type":"Question","name":"Do you deliver internationally?","acceptedAnswer":{"@type":"Answer","text":"Yes. We deliver fully insured to the UK, USA, Europe, Australia, Qatar, the UAE and other countries. Delivery usually takes [X] days. Import duties may apply depending on your country. Our delivery pages explain the process for each market."}},
+  {"@type":"Question","name":"Can I see a rug before I buy it?","acceptedAnswer":{"@type":"Answer","text":"Yes. Book a private video viewing and we will show you the rug live, in daylight, from every angle. We will also show you the back and the knot count, so you can check the quality yourself."}},
+  {"@type":"Question","name":"Can you make a rug in a custom size?","acceptedAnswer":{"@type":"Answer","text":"Yes. We make bespoke silk rugs to your exact size, colours and design. You approve the design drawing first, then we send photo and video updates while it is on the loom. Most bespoke rugs take [X–Y] months, depending on size and knot count."}},
+  {"@type":"Question","name":"Is your Pashmina genuine?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our Pashmina is hand-spun and hand-woven in Kashmir from the fine undercoat of Changthangi goats in Ladakh. It carries the GI tag for Kashmir Pashmina. We never sell shahtoosh, which is illegal because it comes from an endangered antelope."}}
+ ]}
+]}
+</script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<a class="sr-only" href="#main">Skip to content</a>
+
+<!-- Shop header: nav left, shop tools right -->
+<header class="site-head" data-tone="dark">
+  <div class="wrap">
+    <a class="wordmark" href="#top" aria-label="Kashmir Imperial, home">Kashmir Imperial</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#featured">Silk rugs</a>
+      <a href="#pashmina">Pashmina</a>
+      <a href="#bespoke">Bespoke</a>
+      <a href="#trade">Trade</a>
+      <a href="#guides">Journal</a>
+      <div class="menu-extra">
+        <button class="tool" type="button" data-open="search">Search</button>
+        <button class="tool" type="button" data-open="saved">Saved (<span class="n saved-n">0</span>)</button>
+      </div>
+    </nav>
+    <div class="tools">
+      <button class="tool tool-search" type="button" data-open="search">Search</button>
+      <button class="tool tool-saved" type="button" data-open="saved">Saved (<span class="n saved-n">0</span>)</button>
+      <button class="tool tool-bag" type="button" data-open="bag" aria-haspopup="dialog">Bag (<span class="n bag-n">0</span>)</button>
+      <a class="btn btn-lead btn-sm tools-cta" href="#viewing">Book a private viewing</a>
+      <button class="tool menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 1. HERO (doc §1) -->
+<section class="hero" id="top" data-tone="dark">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1760519663238-6cfdf81416db?auto=format&fit=crop&w=1800&q=70" alt="Sunlight falling across a hand-knotted rug">
+    <video id="hero-video" muted loop playsinline preload="metadata" aria-label="A heritage room hung with hand-made rugs"
+      data-hd="https://videos.pexels.com/video-files/3064217/3064217-hd_1920_1080_24fps.mp4"
+      data-sd="https://videos.pexels.com/video-files/3064217/3064217-hd_1280_720_24fps.mp4"></video>
+  </div>
+  <div class="hero-body wrap">
+    <h1 id="hero-title">Luxury Silk Rugs and Pashmina, <span style="white-space:nowrap">Hand-Made</span> in Kashmir</h1>
+    <div class="hero-row">
+      <p class="hero-fade">Pure silk rugs, knotted by hand. Pashmina shawls, woven by hand. Made in Srinagar for homes around the world.</p>
+      <div class="actions hero-fade">
+        <a class="btn btn-light" href="#featured">Shop silk rugs</a>
+        <a class="btn btn-line" href="#pashmina">Shop Pashmina</a>
+      </div>
+    </div>
+    <ul class="trust hero-fade" aria-label="Our guarantees">
+      <li>Pure silk</li>
+      <li><span class="tbc" title="To confirm: GI certificate details">GI-certified Pashmina</span></li>
+      <li>Certificate with every piece</li>
+      <li>Worldwide delivery</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 2. TWO CRAFTS (doc §2) as category tiles -->
+<section class="section" id="crafts" data-tone="light">
+  <div class="wrap">
+    <div class="crafts-head">
+      <h2 data-lines>Two Crafts. One House.</h2>
+      <p class="lead">Kashmir is famous for two great textiles. We bring both together, made the slow way.</p>
+    </div>
+    <div class="tiles">
+      <article class="tile-big">
+        <figure class="frame curtain"><img src="https://images.unsplash.com/photo-1572123979839-3749e9973aba?auto=format&fit=crop&w=1200&q=75" alt="Deep navy rug with a dense floral pattern in rose, gold and sage" loading="lazy"></figure>
+        <h3>Hand-Knotted Silk Rugs</h3>
+        <p>Pure silk, knotted one strand at a time. The colours shift as light moves across the room.</p>
+        <a class="btn btn-dark" href="#featured">Discover silk rugs</a>
+      </article>
+      <article class="tile-big">
+        <figure class="frame curtain"><img src="https://images.unsplash.com/photo-1770732940492-ec02987b3d4c?auto=format&fit=crop&w=1200&q=75" alt="Close-up of a woven paisley pattern in rust, cream and gold" loading="lazy"></figure>
+        <h3>Pashmina &amp; Kani Shawls</h3>
+        <p>Fine Pashmina, spun and woven by hand. Our Kani patterns are woven, never printed.</p>
+        <a class="btn btn-dark" href="#pashmina">Discover Pashmina</a>
+      </article>
+      <a class="tile-small" href="/pashmina/kani/">
+        <figure class="frame"><img src="https://images.unsplash.com/photo-1787220272461-2c53528c9349?auto=format&fit=crop&w=400&h=400&q=70" alt="Strips of shawl fabric with woven and embroidered flowers" loading="lazy"></figure>
+        <div><h3>Kani shawls</h3><p>Shop Kani shawls</p></div>
+      </a>
+      <a class="tile-small" href="/bespoke-rugs/">
+        <figure class="frame"><img src="https://images.unsplash.com/photo-1768749933937-dbad8b68a6e1?auto=format&fit=crop&w=400&h=400&q=70" alt="A wooden loom strung with white warp threads" loading="lazy"></figure>
+        <div><h3>Bespoke silk rugs</h3><p>Start your bespoke brief</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 3. FEATURED SILK RUGS (doc §3), now a shop grid -->
+<section class="section on-grey" id="featured" data-tone="light">
+  <div class="wrap">
+    <div class="row-head">
+      <div>
+        <h2 data-lines>From Our Looms</h2>
+        <p class="lead">Every rug is one of a kind. We list the size, knot count and making time on each one.</p>
+      </div>
+      <a class="btn btn-dark" href="/silk-rugs/">View all silk rugs</a>
+    </div>
+    <ul class="grid4">
+      <li class="prod" data-id="shalimar" data-kind="Silk rug" data-name="Shalimar Medallion" data-inr="540000" data-meta="6 × 9 ft" data-single="1">
+        <div class="media">
+          <a class="img" href="/silk-rugs/shalimar-medallion/" aria-label="Shalimar Medallion, 6 by 9 feet"><figure class="frame"><img src="https://images.unsplash.com/photo-1660394585016-508f949df960?auto=format&fit=crop&w=700&q=70" alt="Red rug with a geometric field and a central diamond medallion" loading="lazy"><span class="alt" style="--img:url('https://images.unsplash.com/photo-1660394585016-508f949df960?auto=format&fit=crop&w=1400&q=75');--pos:50% 50%"></span></figure></a>
+          <button class="save" type="button" aria-pressed="false">Save<span class="sr-only"> Shalimar Medallion</span></button>
+        </div>
+        <div class="info">
+          <div class="line"><h3><a href="/silk-rugs/shalimar-medallion/"><span class="tbc" title="To confirm: rug names and photos">Shalimar Medallion</span></a></h3><p class="price tbc" title="To confirm: price" data-inr="540000">₹5,40,000</p></div>
+          <p class="spec">6 × 9 ft · <span class="tbc" title="To confirm: knot count">400</span> knots per sq. inch · 14 months on the loom</p>
+          <div class="buy"><button class="btn btn-dark btn-sm add" type="button">Add to bag</button><a class="link" href="#viewing">Enquire</a></div>
+        </div>
+      </li>
+      <li class="prod" data-id="nishat" data-kind="Silk rug" data-name="Nishat Garden" data-inr="380000" data-meta="5 × 8 ft" data-single="1">
+        <div class="media">
+          <a class="img" href="/silk-rugs/nishat-garden/" aria-label="Nishat Garden, 5 by 8 feet"><figure class="frame"><img src="https://images.unsplash.com/photo-1531162805941-58330188d75c?auto=format&fit=crop&w=700&q=70" alt="Ivory rug with blue and green flowers around a central medallion" loading="lazy"><span class="alt" style="--img:url('https://images.unsplash.com/photo-1531162805941-58330188d75c?auto=format&fit=crop&w=1400&q=75');--pos:50% 40%"></span></figure></a>
+          <button class="save" type="button" aria-pressed="false">Save<span class="sr-only"> Nishat Garden</span></button>
+        </div>
+        <div class="info">
+          <div class="line"><h3><a href="/silk-rugs/nishat-garden/"><span class="tbc" title="To confirm: rug names and photos">Nishat Garden</span></a></h3><p class="price tbc" title="To confirm: price" data-inr="380000">₹3,80,000</p></div>
+          <p class="spec">5 × 8 ft · <span class="tbc" title="To confirm: knot count">324</span> knots per sq. inch · 11 months on the loom</p>
+          <div class="buy"><button class="btn btn-dark btn-sm add" type="button">Add to bag</button><a class="link" href="#viewing">Enquire</a></div>
+        </div>
+      </li>
+      <li class="prod" data-id="chinar" data-kind="Silk rug" data-name="Chinar Rose" data-inr="1075000" data-meta="8 × 10 ft" data-single="1" data-reserved="1">
+        <div class="media">
+          <a class="img" href="/silk-rugs/chinar-rose/" aria-label="Chinar Rose, 8 by 10 feet"><figure class="frame"><img src="https://images.unsplash.com/photo-1761152006885-c30a627bff18?auto=format&fit=crop&w=700&q=70" alt="Red floral rug with soft window shadows across it" loading="lazy"><span class="alt" style="--img:url('https://images.unsplash.com/photo-1761152006885-c30a627bff18?auto=format&fit=crop&w=1400&q=75');--pos:35% 45%"></span></figure></a>
+          <button class="save" type="button" aria-pressed="false">Save<span class="sr-only"> Chinar Rose</span></button>
+        </div>
+        <div class="info">
+          <div class="line"><h3><a href="/silk-rugs/chinar-rose/"><span class="tbc" title="To confirm: rug names and photos">Chinar Rose</span></a></h3><p class="price tbc" title="To confirm: price" data-inr="1075000">₹10,75,000</p></div>
+          <p class="spec">8 × 10 ft · <span class="tbc" title="To confirm: knot count">576</span> knots per sq. inch · 22 months on the loom</p>
+          <div class="buy"><button class="btn btn-dark btn-sm add" type="button" disabled>Reserved</button><a class="link" href="#viewing">Enquire</a></div>
+        </div>
+      </li>
+      <li class="prod" data-id="dal" data-kind="Silk rug" data-name="Dal Lattice" data-inr="220000" data-meta="4 × 6 ft" data-single="1">
+        <div class="media">
+          <a class="img" href="/silk-rugs/dal-lattice/" aria-label="Dal Lattice, 4 by 6 feet"><figure class="frame"><img src="https://images.unsplash.com/photo-1752568583323-92145f90e6a8?auto=format&fit=crop&w=700&q=70" alt="Ivory rug with a fine geometric lattice and a knotted fringe" loading="lazy"><span class="alt" style="--img:url('https://images.unsplash.com/photo-1752568583323-92145f90e6a8?auto=format&fit=crop&w=1400&q=75');--pos:25% 20%"></span></figure></a>
+          <button class="save" type="button" aria-pressed="false">Save<span class="sr-only"> Dal Lattice</span></button>
+        </div>
+        <div class="info">
+          <div class="line"><h3><a href="/silk-rugs/dal-lattice/"><span class="tbc" title="To confirm: rug names and photos">Dal Lattice</span></a></h3><p class="price tbc" title="To confirm: price" data-inr="220000">₹2,20,000</p></div>
+          <p class="spec">4 × 6 ft · <span class="tbc" title="To confirm: knot count">400</span> knots per sq. inch · 8 months on the loom</p>
+          <div class="buy"><button class="btn btn-dark btn-sm add" type="button">Add to bag</button><a class="link" href="#viewing">Enquire</a></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 3b. PASHMINA & KANI SHAWLS: new shop row (copy from doc §2) + service strip -->
+<section class="section" id="pashmina" data-tone="light">
+  <div class="wrap">
+    <div class="row-head">
+      <div>
+        <h2 data-lines>Pashmina &amp; Kani Shawls</h2>
+        <p class="lead">Fine Pashmina, spun and woven by hand. Our Kani patterns are woven, never printed.</p>
+      </div>
+      <a class="btn btn-dark" href="/pashmina/">Shop Pashmina</a>
+    </div>
+    <ul class="grid4">
+      <li class="prod" data-id="gulmarg" data-kind="Pashmina" data-name="Gulmarg Pashmina Shawl" data-inr="63000" data-meta="100 × 200 cm">
+        <div class="media">
+          <a class="img" href="/pashmina/gulmarg-shawl/" aria-label="Gulmarg Pashmina Shawl"><figure class="frame"><img src="https://images.unsplash.com/photo-1576064991159-d7b8b471a672?auto=format&fit=crop&w=700&h=875&q=70" alt="Folded woollen shawls in taupe with a woven maroon and cream border" loading="lazy"><span class="alt" style="--img:url('https://images.unsplash.com/photo-1576064991159-d7b8b471a672?auto=format&fit=crop&w=1400&q=75');--pos:62% 40%"></span></figure></a>
+          <button class="save" type="button" aria-pressed="false">Save<span class="sr-only"> Gulmarg Pashmina Shawl</span></button>
+        </div>
+        <div class="info">
+          <div class="line"><h3><a href="/pashmina/gulmarg-shawl/"><span class="tbc" title="To confirm: product names and photos">Gulmarg Shawl</span></a></h3><p class="price tbc" title="To confirm: price" data-inr="63000">₹63,000</p></div>
+          <p class="spec">Hand-spun, hand-woven · 100 × 200 cm</p>
+          <fieldset class="swatches"><legend class="sr-only">Colour</legend>
+            <label><input type="radio" name="c-gulmarg" value="Natural taupe" checked><span class="dot" style="--sw:#A59582"></span><span class="sr-only">Natural taupe</span></label>
+            <label><input type="radio" name="c-gulmarg" value="Ivory"><span class="dot" style="--sw:#EDE6D8"></span><span class="sr-only">Ivory</span></label>
+            <label><input type="radio" name="c-gulmarg" value="Charcoal"><span class="dot" style="--sw:#4A4744"></span><span class="sr-only">Charcoal</span></label>
+            <span class="swname">Natural taupe</span></fieldset>
+          <div class="buy"><button class="btn btn-dark btn-sm add" type="button">Add to bag</button></div>
+        </div>
+      </li>
+      <li class="prod" data-id="nishat-shawl" data-kind="Pashmina" data-name="Nishat Embroidered Shawl" data-inr="130000" data-meta="70 × 200 cm">
+        <div class="media">
+          <a class="img" href="/pashmina/nishat-shawl/" aria-label="Nishat Embroidered Shawl"><figure class="frame"><img src="https://images.unsplash.com/photo-1792862253165-bb8aaef44aaf?auto=format&fit=crop&w=700&h=875&q=70" alt="A cream shawl with colourful floral embroidery and red tassels" loading="lazy"><span class="alt" style="--img:url('https://images.unsplash.com/photo-1792862253165-bb8aaef44aaf?auto=format&fit=crop&w=1400&q=75');--pos:40% 25%"></span></figure></a>
+          <button class="save" type="button" aria-pressed="false">Save<span class="sr-only"> Nishat Embroidered Shawl</span></button>
+        </div>
+        <div class="info">
+          <div class="line"><h3><a href="/pashmina/nishat-shawl/"><span class="tbc" title="To confirm: product names and photos">Nishat Embroidered Shawl</span></a></h3><p class="price tbc" title="To confirm: price" data-inr="130000">₹1,30,000</p></div>
+          <p class="spec">Hand-embroidered · 70 × 200 cm</p>
+          <fieldset class="swatches"><legend class="sr-only">Colour</legend>
+            <label><input type="radio" name="c-nishat" value="Ivory" checked><span class="dot" style="--sw:#EFE7D6"></span><span class="sr-only">Ivory</span></label>
+            <label><input type="radio" name="c-nishat" value="Sand"><span class="dot" style="--sw:#CDB99A"></span><span class="sr-only">Sand</span></label>
+            <span class="swname">Ivory</span></fieldset>
+          <div class="buy"><button class="btn btn-dark btn-sm add" type="button">Add to bag</button></div>
+        </div>
+      </li>
+      <li class="prod" data-id="zabarwan" data-kind="Pashmina" data-name="Zabarwan Throw" data-inr="81000" data-meta="130 × 190 cm">
+        <div class="media">
+          <a class="img" href="/pashmina/zabarwan-throw/" aria-label="Zabarwan Throw"><figure class="frame"><img src="https://images.unsplash.com/photo-1734553529922-bc020a21643b?auto=format&fit=crop&w=700&h=875&q=70" alt="A stack of woven throws in ochre and mustard with a herringbone edge" loading="lazy"><span class="alt" style="--img:url('https://images.unsplash.com/photo-1734553529922-bc020a21643b?auto=format&fit=crop&w=1400&q=75');--pos:50% 20%"></span></figure></a>
+          <button class="save" type="button" aria-pressed="false">Save<span class="sr-only"> Zabarwan Throw</span></button>
+        </div>
+        <div class="info">
+          <div class="line"><h3><a href="/pashmina/zabarwan-throw/"><span class="tbc" title="To confirm: product names and photos">Zabarwan Throw</span></a></h3><p class="price tbc" title="To confirm: price" data-inr="81000">₹81,000</p></div>
+          <p class="spec">Hand-woven · 130 × 190 cm</p>
+          <fieldset class="swatches"><legend class="sr-only">Colour</legend>
+            <label><input type="radio" name="c-zabarwan" value="Ochre" checked><span class="dot" style="--sw:#B7852F"></span><span class="sr-only">Ochre</span></label>
+            <label><input type="radio" name="c-zabarwan" value="Rust"><span class="dot" style="--sw:#8A4B2B"></span><span class="sr-only">Rust</span></label>
+            <label><input type="radio" name="c-zabarwan" value="Ink"><span class="dot" style="--sw:#23283B"></span><span class="sr-only">Ink</span></label>
+            <span class="swname">Ochre</span></fieldset>
+          <div class="buy"><button class="btn btn-dark btn-sm add" type="button">Add to bag</button></div>
+        </div>
+      </li>
+      <li class="prod" data-id="pahalgam" data-kind="Pashmina" data-name="Pahalgam Herringbone Wrap" data-inr="54000" data-meta="70 × 200 cm">
+        <div class="media">
+          <a class="img" href="/pashmina/pahalgam-wrap/" aria-label="Pahalgam Herringbone Wrap"><figure class="frame"><img src="https://images.unsplash.com/photo-1756361771520-8711a9ff4668?auto=format&fit=crop&w=700&h=875&q=70" alt="A rolled grey and brown herringbone wool wrap" loading="lazy"><span class="alt" style="--img:url('https://images.unsplash.com/photo-1756361771520-8711a9ff4668?auto=format&fit=crop&w=1400&q=75');--pos:45% 50%"></span></figure></a>
+          <button class="save" type="button" aria-pressed="false">Save<span class="sr-only"> Pahalgam Herringbone Wrap</span></button>
+        </div>
+        <div class="info">
+          <div class="line"><h3><a href="/pashmina/pahalgam-wrap/"><span class="tbc" title="To confirm: product names and photos">Pahalgam Herringbone Wrap</span></a></h3><p class="price tbc" title="To confirm: price" data-inr="54000">₹54,000</p></div>
+          <p class="spec">Hand-spun, hand-woven · 70 × 200 cm</p>
+          <fieldset class="swatches"><legend class="sr-only">Colour</legend>
+            <label><input type="radio" name="c-pahalgam" value="Stone grey" checked><span class="dot" style="--sw:#8D8A85"></span><span class="sr-only">Stone grey</span></label>
+            <label><input type="radio" name="c-pahalgam" value="Oatmeal"><span class="dot" style="--sw:#CFC3AE"></span><span class="sr-only">Oatmeal</span></label>
+            <span class="swname">Stone grey</span></fieldset>
+          <div class="buy"><button class="btn btn-dark btn-sm add" type="button">Add to bag</button></div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Service strip: text taken from the doc's FAQ and final CTA -->
+    <ul class="service" aria-label="Delivery, certificate and viewing">
+      <li><h3>Insured worldwide delivery</h3><p>Fully insured to the UK, USA, Europe, Australia, Qatar, the UAE and other countries.</p></li>
+      <li><h3>Certificate with every piece</h3><p>Every Kashmir Imperial rug comes with a certificate.</p></li>
+      <li><h3>Private video viewing</h3><p>See any rug live on a private video call.</p></li>
+      <li><h3>Returns</h3><p><span class="tbc" title="To confirm: returns policy">[Returns policy to confirm]</span></p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 4. SHOP BY SIZE (doc §4) + shop by room -->
+<section class="section on-grey" id="sizes" data-tone="light">
+  <div class="wrap">
+    <div class="sizes-head">
+      <h2 id="sizes-title">Shop by Size</h2>
+      <p class="lead">Need a different size? <a class="link" href="/bespoke-rugs/">We make bespoke.</a></p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Shop silk rugs by">
+      <button class="tab" role="tab" id="tab-size" aria-selected="true" aria-controls="set-size" type="button">By size</button>
+      <button class="tab" role="tab" id="tab-room" aria-selected="false" aria-controls="set-room" type="button" tabindex="-1">By room</button>
+    </div>
+    <nav class="panels" id="set-size" role="tabpanel" aria-labelledby="tab-size" aria-label="Shop silk rugs by size">
+      <a class="panel" href="/silk-rugs/?size=small"><img src="https://images.unsplash.com/photo-1767159601823-96d0295344ce?auto=format&fit=crop&w=900&q=70" alt="A small floral rug beside a bed" loading="lazy"><span class="panel-label"><h3>Small</h3><span>Up to 4 × 6 ft</span></span></a>
+      <a class="panel is-open" href="/silk-rugs/?size=medium"><img src="https://images.unsplash.com/photo-1681370787860-eea901df92fe?auto=format&fit=crop&w=900&q=70" alt="A medium rug in a living room under a low table" loading="lazy"><span class="panel-label"><h3>Medium</h3><span>5 × 7 to 6 × 9 ft</span></span></a>
+      <a class="panel" href="/silk-rugs/?size=large"><img src="https://images.unsplash.com/photo-1773754532196-014342510e64?auto=format&fit=crop&w=900&q=70" alt="A large patterned rug under a long sofa" loading="lazy"><span class="panel-label"><h3>Large</h3><span>8 × 10 ft and above</span></span></a>
+      <a class="panel" href="/silk-rugs/?size=runner"><img src="https://images.unsplash.com/photo-1689263132088-c9d2233ca5b1?auto=format&fit=crop&w=900&q=70" alt="A long rug in an entrance hall at the foot of a staircase" loading="lazy"><span class="panel-label"><h3 class="tbc" title="To confirm: is this shape in stock?">Runner</h3><span>Long and narrow</span></span></a>
+      <a class="panel" href="/silk-rugs/?size=round"><img src="https://images.unsplash.com/photo-1778809848208-140b81767c4e?auto=format&fit=crop&w=900&q=70" alt="A circular medallion pattern in green, gold and rust" loading="lazy"><span class="panel-label"><h3 class="tbc" title="To confirm: is this shape in stock?">Round</h3><span>Round</span></span></a>
+    </nav>
+    <nav class="panels is-off" id="set-room" role="tabpanel" aria-labelledby="tab-room" aria-label="Shop silk rugs by room">
+      <a class="panel" href="/silk-rugs/?room=living-room"><img src="https://images.unsplash.com/photo-1534889156217-d643df14f14a?auto=format&fit=crop&w=900&q=70" alt="A red patterned rug under a sofa and coffee table" loading="lazy"><span class="panel-label"><h3>Living room</h3><span>Rugs that anchor a seating area</span></span></a>
+      <a class="panel is-open" href="/silk-rugs/?room=bedroom"><img src="https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?auto=format&fit=crop&w=900&q=70" alt="A floral rug at the foot of a bed in a dark grey bedroom" loading="lazy"><span class="panel-label"><h3>Bedroom</h3><span>Soft underfoot, beside the bed</span></span></a>
+      <a class="panel" href="/silk-rugs/?room=dining-room"><img src="https://images.unsplash.com/photo-1783840496479-97a42db36a47?auto=format&fit=crop&w=900&q=70" alt="An ornate rug under a dining table and chairs" loading="lazy"><span class="panel-label"><h3>Dining room</h3><span>Sized to the table and chairs</span></span></a>
+      <a class="panel" href="/silk-rugs/?room=hallway"><img src="https://images.unsplash.com/photo-1689263132088-c9d2233ca5b1?auto=format&fit=crop&w=900&q=70" alt="A long rug in an entrance hall" loading="lazy"><span class="panel-label"><h3>Hallway</h3><span>Runners and entrance rugs</span></span></a>
+    </nav>
+  </div>
+</section>
+
+<!-- 5. BESPOKE (doc §5) -->
+<section class="bespoke" id="bespoke" data-tone="dark">
+  <div class="bespoke-film">
+    <video id="loom-video" muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1768749933937-dbad8b68a6e1?auto=format&fit=crop&w=1600&q=70" aria-label="An artisan working warp threads on a traditional loom"
+      data-hd="https://videos.pexels.com/video-files/13752603/13752603-hd_1920_1080_60fps.mp4"
+      data-sd="https://videos.pexels.com/video-files/13752603/13752603-sd_960_540_30fps.mp4"></video>
+    <div class="bespoke-shade"></div>
+  </div>
+  <div class="scene wrap">
+    <div class="bespoke-top">
+      <h2 data-lines>Bespoke Silk Rugs, Made to Measure</h2>
+      <p class="lead">Your size, your colours, your design. Knotted by hand in Srinagar.</p>
+    </div>
+    <div class="bespoke-bottom">
+      <ol class="steps">
+        <li><h3>Brief</h3><p>Tell us the room, size and colours.</p></li>
+        <li><h3>Design</h3><p>Approve the drawing and colours.</p></li>
+        <li><h3>Loom</h3><p>Get photo and video updates.</p></li>
+        <li><h3>Delivery</h3><p>Receive your rug and certificate.</p></li>
+      </ol>
+      <div class="bespoke-foot">
+        <a class="btn btn-lead" href="/bespoke-rugs/">Start your bespoke brief</a>
+        <p>Lead time: usually <span class="tbc" title="To confirm: bespoke lead time">[X–Y] months</span>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. AUTHENTICITY (doc §6) -->
+<section class="proof" id="proof" data-tone="light">
+  <div class="scene wrap">
+    <div class="proof-grid">
+      <figure class="frame loupe-fig" id="loupe-fig">
+        <img id="loupe-img" src="https://images.unsplash.com/photo-1767161425522-23a79d10b017?auto=format&fit=crop&w=1600&q=75" alt="A rug folded back at the corner, showing the knots on its reverse" loading="lazy">
+        <div class="loupe" aria-hidden="true"></div>
+        <span class="loupe-hint" aria-hidden="true">Move over the photo to look closer</span>
+      </figure>
+      <div>
+        <h2 data-lines>Proof, Not Promises</h2>
+        <p class="lead">Many “silk” rugs are viscose. Much “Pashmina” is mostly wool. Here is how we prove ours.</p>
+        <dl class="proofs">
+          <div><dt>Real silk</dt><dd>Never viscose or “art silk”.</dd></div>
+          <div><dt>Knot count</dt><dd>Listed on every rug.</dd></div>
+          <div><dt>GI-certified</dt><dd><span class="tbc" title="To confirm: GI certificate details">Kashmir Pashmina tag.</span></dd></div>
+          <div><dt>Certificate</dt><dd>Signed, with every piece.</dd></div>
+        </dl>
+        <a class="btn btn-dark" href="/authenticity/">How we prove it</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. ARTISANS (doc §7) + 8. FOUNDER (doc §8) -->
+<section class="section on-grey" id="artisans" data-tone="light">
+  <div class="wrap">
+    <div class="artisans">
+      <div class="artisans-intro">
+        <h2 data-lines>The Hands Behind Every Piece</h2>
+        <p class="lead">Every piece is made by named craftspeople in Kashmir. Their skill is what you are buying.</p>
+      </div>
+      <ul class="columns">
+        <li data-drift="-12"><figure class="frame curtain"><img src="https://images.unsplash.com/photo-1578314874366-1975eac6e32a?auto=format&fit=crop&w=700&q=70" alt="Hands passing coloured weft through a loom" loading="lazy"></figure><h3 class="tbc" title="Client to provide: name, photo and consent">Name</h3><p class="spec">Craft · years at the loom</p></li>
+        <li data-drift="10"><figure class="frame curtain"><img src="https://images.unsplash.com/photo-1767125715251-c257c8f8cefe?auto=format&fit=crop&w=700&q=70" alt="Skeins of dyed silk thread in ivory, teal and blue" loading="lazy"></figure><h3 class="tbc" title="Client to provide: name, photo and consent">Name</h3><p class="spec">Craft · years at the loom</p></li>
+        <li data-drift="-22"><figure class="frame curtain"><img src="https://images.unsplash.com/photo-1766875127679-00a421f8e126?auto=format&fit=crop&w=700&q=70" alt="A large wooden loom with a rug partly woven" loading="lazy"></figure><h3 class="tbc" title="Client to provide: name, photo and consent">Name</h3><p class="spec">Craft · years at the loom</p></li>
+      </ul>
+    </div>
+    <div class="founder" id="founder">
+      <figure class="frame curtain"><img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1300&q=70" alt="Wooden houseboats on Dal Lake, Srinagar, under snow-covered mountains" loading="lazy"></figure>
+      <div>
+        <h2 data-lines>From Srinagar to the World</h2>
+        <p>Kashmir Imperial was founded by Ittender Singh, who was born and raised in Srinagar. <span class="tbc" title="Client to add: one line on his connection to the craft">[One line on his connection to the craft.]</span></p>
+        <blockquote><span class="fill">“Kashmiri craft deserves to be seen properly, with its makers named.”</span>
+          <footer>Ittender Singh, founder <span class="tbc" title="Founder to approve this quote">(to approve)</span></footer></blockquote>
+        <a class="btn btn-dark" href="/our-story/">Read our story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. TRADE (doc §9) + 10. PROJECT STORY (doc §10) -->
+<section class="section on-grey" id="trade" data-tone="light" style="padding-top:clamp(24px,3vw,48px)">
+  <div class="wrap stack">
+    <article class="card card-dark">
+      <div>
+        <h2 data-lines>For Designers, Architects &amp; Hotels</h2>
+        <p class="lead">We work with design studios and hotels on bespoke projects.</p>
+        <ul class="trade-list"><li>Custom sizes and colours</li><li>Trade pricing and samples</li><li>One contact from brief to delivery</li></ul>
+        <a class="btn btn-light" href="/trade/">Apply for a trade account</a>
+      </div>
+      <figure class="frame curtain"><img src="https://images.unsplash.com/photo-1773754371144-9dcb02249c33?auto=format&fit=crop&w=1300&q=70" alt="A living room with modern furniture and a large rug" loading="lazy"></figure>
+    </article>
+    <article class="card card-light" aria-labelledby="project-title">
+      <figure class="frame curtain"><img src="https://images.unsplash.com/photo-1789249709740-e9a46a14dee8?auto=format&fit=crop&w=1300&q=70" alt="An ornate sitting room with antique furniture and a large rug" loading="lazy">
+        <span class="pip"><img src="https://images.unsplash.com/photo-1761988177300-d5c0c8a5c309?auto=format&fit=crop&w=500&q=70" alt="Close-up of a red rug's pattern in raking light" loading="lazy"></span></figure>
+      <div>
+        <p class="project-label">Project story</p>
+        <h2 id="project-title"><span class="tbc" title="Client to provide: one real project, with permission">[Project name], [City]</span></h2>
+        <p class="lead">A <span class="tbc" title="Client to provide">[size]</span> silk-on-silk rug, designed in <span class="tbc" title="Client to provide">[colours]</span> and knotted over <span class="tbc" title="Client to provide">[X]</span> months.</p>
+        <dl class="facts">
+          <div><dt>Size</dt><dd class="tbc">[size]</dd></div>
+          <div><dt>Knots per sq. inch</dt><dd class="tbc">[X]</dd></div>
+          <div><dt>Months on the loom</dt><dd class="tbc">[X]</dd></div>
+          <div><dt>Location</dt><dd class="tbc">[City]</dd></div>
+        </dl>
+        <a class="link" href="/journal/">See the project</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 11. TESTIMONIALS (doc §11): real quotes only, left out until the client supplies them -->
+
+<!-- 12. JOURNAL (doc §12) + 13. FAQ (doc §13) -->
+<section class="section guides" id="guides" data-tone="light">
+  <div class="wrap">
+    <div class="guides-grid">
+      <div class="guides-media frame">
+        <img class="is-on" src="https://images.unsplash.com/photo-1760519663238-6cfdf81416db?auto=format&fit=crop&w=900&q=70" alt="Sunlight showing the sheen of a red silk rug" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1608724552908-e1c141f631ac?auto=format&fit=crop&w=900&q=70" alt="A stack of folded hand-knotted rugs" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1783764245455-6aba9481d836?auto=format&fit=crop&w=900&q=70" alt="Close-up of a woven floral and paisley shawl pattern" loading="lazy">
+      </div>
+      <div>
+        <h2 data-lines>Buyer’s Guides</h2>
+        <ul>
+          <li><a class="guide is-on" href="/journal/is-your-rug-real-silk/" data-i="0"><img class="thumb" src="https://images.unsplash.com/photo-1760519663238-6cfdf81416db?auto=format&fit=crop&w=300&q=70" alt="Sunlight showing the sheen of a red silk rug" loading="lazy"><span><h3>Is Your Rug Real Silk?</h3><p>Five simple checks.</p></span><span class="go">Read the guide</span></a></li>
+          <li><a class="guide" href="/journal/what-does-a-silk-rug-cost/" data-i="1"><img class="thumb" src="https://images.unsplash.com/photo-1608724552908-e1c141f631ac?auto=format&fit=crop&w=300&q=70" alt="A stack of folded hand-knotted rugs" loading="lazy"><span><h3>What Does a Silk Rug Cost?</h3><p>What drives the price.</p></span><span class="go">Read the guide</span></a></li>
+          <li><a class="guide" href="/journal/which-pashmina-is-best/" data-i="2"><img class="thumb" src="https://images.unsplash.com/photo-1783764245455-6aba9481d836?auto=format&fit=crop&w=300&q=70" alt="Close-up of a woven floral and paisley shawl pattern" loading="lazy"><span><h3>Which Pashmina Is Best?</h3><p>How to choose well.</p></span><span class="go">Read the guide</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="faq-wrap faq" id="faq">
+      <div class="faq-grid">
+        <h2 data-lines>Frequently Asked Questions</h2>
+        <div>
+          <details open><summary>What makes Kashmiri silk rugs special?</summary><div class="faq-body"><p>Kashmiri silk rugs are knotted by hand in pure silk, one knot at a time. Fine knotting gives sharp detail, and natural silk has a soft sheen that changes with the light. Many “silk” rugs sold online are machine-made from viscose. These look similar at first but wear and fade quickly.</p></div></details>
+          <details><summary>How much does a hand-knotted silk rug cost?</summary><div class="faq-body"><p>Our silk rugs start from <span class="tbc" title="To confirm: starting price">[₹ X]</span>. The price depends on size, knot count and design, because these decide how long a rug takes to make. A large, finely knotted rug can spend many months on the loom. Send us an enquiry for an exact price, including delivery to your country.</p></div></details>
+          <details><summary>How can I tell if a silk rug is real?</summary><div class="faq-body"><p>Turn the rug over. A hand-knotted rug shows small, slightly uneven knots on the back, and the fringe is part of the rug, not sewn on. Real silk feels cool and smooth. Viscose, often sold as “art silk”, feels slippery and loses its shine. Every Kashmir Imperial rug comes with a certificate.</p></div></details>
+          <details><summary>Do you deliver internationally?</summary><div class="faq-body"><p>Yes. We deliver fully insured to the UK, USA, Europe, Australia, Qatar, the UAE and other countries. Delivery usually takes <span class="tbc" title="To confirm: delivery times">[X] days</span>. Import duties may apply depending on your country <span class="tbc" title="To confirm: who pays duties">[confirm who pays]</span>. Our delivery pages explain the process for each market.</p></div></details>
+          <details><summary>Can I see a rug before I buy it?</summary><div class="faq-body"><p>Yes. Book a private video viewing and we will show you the rug live, in daylight, from every angle. We will also show you the back and the knot count, so you can check the quality yourself. <span class="tbc" title="To confirm: are in-person viewings available?">[In-person viewings: to confirm]</span></p></div></details>
+          <details><summary>Can you make a rug in a custom size?</summary><div class="faq-body"><p>Yes. We make bespoke silk rugs to your exact size, colours and design. You approve the design drawing first, then we send photo and video updates while it is on the loom. Most bespoke rugs take <span class="tbc" title="To confirm: bespoke lead time">[X–Y] months</span>, depending on size and knot count.</p></div></details>
+          <details><summary>Is your Pashmina genuine?</summary><div class="faq-body"><p>Yes. Our Pashmina is hand-spun and hand-woven in Kashmir from the fine undercoat of Changthangi goats in Ladakh. It carries the <span class="tbc" title="To confirm: GI certificate details">GI tag for Kashmir Pashmina</span>. We never sell shahtoosh, which is illegal because it comes from an endangered antelope.</p></div></details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 14. FINAL CTA (doc §14): burgundy band, gold text -->
+<div class="cta-wrap">
+  <section class="cta" id="viewing" data-tone="dark">
+    <div class="wrap">
+      <h2 data-chars>See It Before You Decide</h2>
+      <div class="cta-row">
+        <p>See any rug live on a private video call. Or message us with your questions.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="/book-a-viewing/">Book a viewing</a>
+          <a class="btn btn-line" href="https://wa.me/?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20a%20silk%20rug.">WhatsApp us</a>
+          <a class="btn btn-line" href="mailto:hello@example.com">Email us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer class="foot on-black" data-tone="dark">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <h3>New pieces and buyer’s guides, by email</h3>
+        <p>One email when a new rug comes off the loom.</p>
+      </div>
+      <form class="news" id="news" novalidate>
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" type="email" autocomplete="email" placeholder="Email address" required>
+        <button class="btn btn-light" type="submit">Sign up</button>
+        <p class="msg" id="news-msg" role="status"></p>
+      </form>
+    </div>
+    <div class="foot-grid">
+      <div><a class="wordmark" href="#top">Kashmir Imperial</a><p>Hand-knotted silk rugs and hand-woven Pashmina, made in Srinagar.</p></div>
+      <div><h4>Shop</h4><ul><li><a href="/silk-rugs/">Silk rugs</a></li><li><a href="/pashmina/">Pashmina</a></li><li><a href="/bespoke-rugs/">Bespoke</a></li></ul></div>
+      <div><h4>The house</h4><ul><li><a href="/our-story/">Our story</a></li><li><a href="/artisans/">Artisans</a></li><li><a href="/journal/">Journal</a></li></ul></div>
+      <div><h4>Help</h4><ul><li><a href="/delivery/">Delivery</a></li><li><a href="/authenticity/">Authenticity</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+      <div><h4>Trade</h4><ul><li><a href="/trade/" data-trade>Apply for an account</a></li></ul></div>
+    </div>
+    <div class="giant" aria-hidden="true">Kashmir Imperial</div>
+    <div class="foot-legal"><span>© 2026 Kashmir Imperial, Srinagar</span><span>Insured delivery worldwide · Payment methods: <span class="tbc" title="To confirm: payment methods">[to confirm]</span></span><span><a href="/privacy-policy/">Privacy policy</a> · <a href="/terms/">Terms</a></span></div>
+  </div>
+</footer>
+
+<a class="wa is-tucked" href="https://wa.me/?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20a%20silk%20rug.">WhatsApp us</a>
+
+<!-- Search, bag and saved -->
+<div class="scrim" id="scrim"></div>
+<div class="search" id="search" role="dialog" aria-modal="true" aria-label="Search the collection" data-lenis-prevent>
+  <div class="wrap">
+    <div class="search-in">
+      <label class="sr-only" for="s-input">Search the collection</label>
+      <input id="s-input" type="search" placeholder="Search rugs and shawls" autocomplete="off">
+      <button class="close" type="button" data-close>Close</button>
+    </div>
+    <div class="results" id="s-res" aria-live="polite"></div>
+  </div>
+</div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Bag and saved pieces" data-lenis-prevent>
+  <div class="drawer-head">
+    <div class="dtabs" role="tablist">
+      <button class="dtab" role="tab" id="dt-bag" aria-selected="true" type="button" data-tab="bag">Bag (<span class="bag-n">0</span>)</button>
+      <button class="dtab" role="tab" id="dt-saved" aria-selected="false" type="button" data-tab="saved">Saved (<span class="saved-n">0</span>)</button>
+    </div>
+    <button class="close" type="button" data-close>Close</button>
+  </div>
+  <div class="drawer-body" id="d-body" role="tabpanel" aria-live="polite"></div>
+  <div class="drawer-foot" id="d-foot">
+    <div class="sub"><span>Subtotal</span><span id="d-sub">₹0</span></div>
+    <p>Delivery and import duties are shown at checkout. <span class="tbc" title="To confirm: who pays duties">[Who pays duties: to confirm]</span></p>
+    <a class="btn btn-lead" href="/checkout/" id="d-checkout">Checkout</a>
+    <a class="link" href="/book-a-viewing/">Book a private viewing instead</a>
+  </div>
+</aside>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script>
+(() => {
+const $ = (s, c = document) => c.querySelector(s);
+const $$ = (s, c = document) => [...c.querySelectorAll(s)];
+document.documentElement.classList.add('js');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const wide = matchMedia('(min-width: 901px)').matches;
+const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+const dl = (event, extra) => (window.dataLayer = window.dataLayer || []).push(Object.assign({ event }, extra || {}));
+const store = { get(k, d){ try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch { return d; } }, set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
+let lenis = null;
+
+/* ═════════ Films ═════════ */
+const hero = $('#hero-video'), loom = $('#loom-video');
+[hero, loom].forEach(v => { v.src = wide ? v.dataset.hd : v.dataset.sd; ['loadeddata', 'playing'].forEach(t => v.addEventListener(t, () => v.classList.add('is-ready'))); });
+if (!reduce) hero.play().catch(() => {});
+new IntersectionObserver(([e]) => { if (reduce) return; e.isIntersecting ? loom.play().catch(() => {}) : loom.pause(); }, { rootMargin: '400px 0px' }).observe(loom);
+
+/* ═════════ Prices: Indian rupees only ═════════ */
+const money = n => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(n);
+
+/* ═════════ Products, bag and saved ═════════ */
+const prods = $$('.prod').map(el => ({
+  el, id: el.dataset.id, name: el.dataset.name, kind: el.dataset.kind, inr: +el.dataset.inr, meta: el.dataset.meta,
+  single: el.dataset.single === '1', reserved: el.dataset.reserved === '1',
+  img: $('img', el).src, url: $('a.img', el).getAttribute('href')
+}));
+const find = id => prods.find(p => p.id === id);
+let bag = store.get('ki-bag', []).filter(i => find(i.id));
+let saved = store.get('ki-saved', []).filter(find);
+let tab = 'bag';
+
+function paintPrices(){
+  $$('.prod [data-inr]').forEach(e => e.textContent = money(+e.dataset.inr));
+}
+function counts(){
+  const n = bag.reduce((a, i) => a + i.qty, 0);
+  $$('.bag-n').forEach(e => e.textContent = n);
+  $$('.saved-n').forEach(e => e.textContent = saved.length);
+  $$('.save').forEach(b => { const id = b.closest('.prod').dataset.id; b.setAttribute('aria-pressed', saved.includes(id)); b.firstChild.textContent = saved.includes(id) ? 'Saved' : 'Save'; });
+}
+function renderDrawer(){
+  $$('.dtab').forEach(t => { const on = t.dataset.tab === tab; t.setAttribute('aria-selected', on); });
+  const body = $('#d-body'), foot = $('#d-foot');
+  if (tab === 'bag'){
+    foot.style.display = bag.length ? '' : 'none';
+    if (!bag.length){
+      body.innerHTML = '<div class="empty"><p>Your bag is empty.</p><div class="sugg"><a class="link" href="#featured" data-close>Shop silk rugs</a><a class="link" href="#pashmina" data-close>Shop Pashmina</a></div></div>';
+    } else {
+      body.innerHTML = bag.map((i, k) => { const p = find(i.id);
+        return `<div class="row"><img src="${p.img.replace(/w=\d+/, 'w=200')}" alt="">
+          <div><h4>${p.name}</h4><p class="spec">${i.detail}</p>
+          <div class="acts">${p.single ? '' : `<button class="step" type="button" data-q="-1" data-k="${k}" aria-label="Fewer ${p.name}">−</button><span>${i.qty}</span><button class="step" type="button" data-q="1" data-k="${k}" aria-label="More ${p.name}">+</button>`}<button type="button" data-rm="${k}">Remove</button></div></div>
+          <p class="price">${money(p.inr * i.qty)}</p></div>`; }).join('');
+      $('#d-sub').textContent = money(bag.reduce((a, i) => a + find(i.id).inr * i.qty, 0));
+    }
+  } else {
+    foot.style.display = 'none';
+    body.innerHTML = saved.length ? saved.map(id => { const p = find(id);
+      return `<div class="row"><img src="${p.img.replace(/w=\d+/, 'w=200')}" alt="">
+        <div><h4>${p.name}</h4><p class="spec">${p.meta}</p><div class="acts">${p.reserved ? '<span class="spec">Reserved</span>' : `<button type="button" data-addsaved="${id}">Add to bag</button>`}<button type="button" data-unsave="${id}">Remove</button></div></div>
+        <p class="price">${money(p.inr)}</p></div>`; }).join('')
+      : '<div class="empty"><p>Nothing saved yet. Use Save on any rug or shawl to keep it here.</p></div>';
+  }
+}
+const persist = () => { store.set('ki-bag', bag); store.set('ki-saved', saved); };
+function addToBag(id){
+  const p = find(id); if (!p || p.reserved) return;
+  const detail = p.kind === 'Pashmina' ? ($('input:checked', p.el)?.value || '') + ' · ' + p.meta : p.meta;
+  const hit = bag.find(i => i.id === id && i.detail === detail);
+  if (hit){ if (!p.single) hit.qty++; } else bag.push({ id, detail, qty: 1 });
+  persist(); counts(); renderDrawer(); dl('add_to_bag', { item: p.name, value: p.inr }); openPanel('bag');
+}
+
+/* ═════════ Panels: search + bag/saved drawer ═════════ */
+const scrim = $('#scrim'), drawer = $('#drawer'), search = $('#search');
+let openEl = null, lastFocus = null;
+const inertTargets = () => [$('main'), $('footer'), $('.site-head'), $('.wa')].filter(Boolean);
+function openPanel(kind){
+  if (openEl) closePanel(true);
+  lastFocus = document.activeElement;
+  if (kind === 'search'){ openEl = search; runSearch(''); }
+  else { openEl = drawer; tab = kind === 'saved' ? 'saved' : 'bag'; renderDrawer(); }
+  openEl.classList.add('is-open'); scrim.classList.add('is-on');
+  inertTargets().forEach(e => e.inert = true);
+  lenis && lenis.stop();
+  setTimeout(() => (kind === 'search' ? $('#s-input') : $('.dtab[aria-selected="true"]', drawer)).focus(), 60);
+}
+function closePanel(keepFocus){
+  if (!openEl) return;
+  openEl.classList.remove('is-open'); scrim.classList.remove('is-on'); openEl = null;
+  inertTargets().forEach(e => e.inert = false);
+  lenis && lenis.start();
+  if (!keepFocus && lastFocus) lastFocus.focus();
+}
+scrim.addEventListener('click', () => closePanel());
+document.addEventListener('keydown', e => {
+  if (!openEl) return;
+  if (e.key === 'Escape') return closePanel();
+  if (e.key === 'Tab'){
+    const f = $$('a[href],button:not([disabled]),input,select', openEl).filter(x => x.offsetParent !== null);
+    if (!f.length) return;
+    const a = f[0], z = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === a){ e.preventDefault(); z.focus(); }
+    else if (!e.shiftKey && document.activeElement === z){ e.preventDefault(); a.focus(); }
+  }
+});
+document.addEventListener('click', e => {
+  const t = e.target.closest('[data-open],[data-close],[data-q],[data-rm],[data-unsave],[data-addsaved],.dtab,.add,.save,.res');
+  if (!t) return;
+  if (t.matches('[data-open]')){ const k = t.dataset.open; nav.classList.remove('is-open'); menuBtn.setAttribute('aria-expanded', false); menuBtn.textContent = 'Menu'; return openPanel(k); }
+  if (t.matches('[data-close]')){ if (t.tagName === 'A') { closePanel(true); } else closePanel(); return; }
+  if (t.matches('.res')) return closePanel(true);
+  if (t.matches('.dtab')){ tab = t.dataset.tab; return renderDrawer(); }
+  if (t.matches('.add')) return addToBag(t.closest('.prod').dataset.id);
+  if (t.matches('.save')){ const id = t.closest('.prod').dataset.id; saved = saved.includes(id) ? saved.filter(x => x !== id) : [...saved, id]; persist(); counts(); renderDrawer(); dl('save_item', { item: find(id).name }); return; }
+  if (t.matches('[data-q]')){ const i = bag[+t.dataset.k]; i.qty = Math.max(1, i.qty + +t.dataset.q); }
+  if (t.matches('[data-rm]')) bag.splice(+t.dataset.rm, 1);
+  if (t.matches('[data-unsave]')) saved = saved.filter(x => x !== t.dataset.unsave);
+  if (t.matches('[data-addsaved]')) return addToBag(t.dataset.addsaved);
+  persist(); counts(); renderDrawer();
+});
+$('#d-checkout').addEventListener('click', () => dl('begin_checkout', { value: bag.reduce((a, i) => a + find(i.id).inr * i.qty, 0) }));
+$$('.prod input[type=radio]').forEach(r => r.addEventListener('change', () => { $('.swname', r.closest('.prod')).textContent = r.value; }));
+
+/* Search over the product cards */
+const sInput = $('#s-input'), sRes = $('#s-res');
+function runSearch(q){
+  q = q.trim().toLowerCase();
+  if (!q){ sRes.innerHTML = '<p class="hint">Try a name, a size or a type.</p><div class="sugg"><a class="link" href="#featured" data-close>Silk rugs</a><a class="link" href="#pashmina" data-close>Pashmina</a><a class="link" href="/bespoke-rugs/">Bespoke rugs</a><a class="link" href="/trade/">Trade</a></div>'; return; }
+  const hits = prods.filter(p => `${p.name} ${p.kind} ${p.meta}`.toLowerCase().includes(q));
+  sRes.innerHTML = hits.length
+    ? hits.map(p => `<a class="res" href="#${p.el.closest('section').id}"><img src="${p.img.replace(/w=\d+/, 'w=160')}" alt=""><div><h4>${p.name}</h4><p class="spec">${p.kind} · ${p.meta}</p></div><span class="price">${money(p.inr)}</span></a>`).join('')
+    : `<p class="hint">No results for “${q.replace(/[<>&"]/g, '')}”. Try “silk”, “Kani” or “6 × 9”.</p>`;
+}
+sInput.addEventListener('input', () => { runSearch(sInput.value); if (sInput.value.length > 2) dl('search', { term: sInput.value }); });
+
+/* Prices and counts at load */
+paintPrices(); counts(); renderDrawer();
+
+/* ═════════ Header ═════════ */
+const head = $('.site-head'), nav = $('#nav'), menuBtn = $('.menu-btn');
+const toned = $$('[data-tone]:not(.site-head)');
+function onScroll(){
+  head.classList.toggle('is-solid', scrollY > 40);
+  const under = toned.find(s => { const r = s.getBoundingClientRect(); return r.top <= 36 && r.bottom > 36; });
+  if (under) head.dataset.tone = under.dataset.tone;
+}
+addEventListener('scroll', onScroll, { passive: true }); onScroll();
+menuBtn.addEventListener('click', () => { const o = nav.classList.toggle('is-open'); menuBtn.setAttribute('aria-expanded', o); menuBtn.textContent = o ? 'Close' : 'Menu'; head.classList.add('is-solid'); });
+nav.addEventListener('click', e => { if (e.target.closest('a')){ nav.classList.remove('is-open'); menuBtn.setAttribute('aria-expanded', false); menuBtn.textContent = 'Menu'; } });
+new IntersectionObserver(([e]) => $('.wa').classList.toggle('is-tucked', e.isIntersecting), { threshold: .2 }).observe($('.hero-row'));
+
+/* ═════════ Shop by size / room ═════════ */
+const tabsEl = $$('.tab');
+function showSet(which){
+  tabsEl.forEach(t => { const on = t.id === 'tab-' + which; t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1; });
+  $('#set-size').classList.toggle('is-off', which !== 'size'); $('#set-room').classList.toggle('is-off', which !== 'room');
+  $('#sizes-title').textContent = which === 'size' ? 'Shop by Size' : 'Shop by Room';
+  dl('shop_by_tab', { tab: which });
+}
+tabsEl.forEach(t => { t.addEventListener('click', () => showSet(t.id.replace('tab-', '')));
+  t.addEventListener('keydown', e => { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft'){ const o = tabsEl.find(x => x !== t); showSet(o.id.replace('tab-', '')); o.focus(); } }); });
+$$('.panel').forEach(p => {
+  const open = () => $$('.panel', p.parentElement).forEach(q => q.classList.toggle('is-open', q === p));
+  p.addEventListener('pointerenter', open); p.addEventListener('focus', open);
+  p.addEventListener('click', e => { if (!fine && !p.classList.contains('is-open')){ e.preventDefault(); open(); } });
+});
+
+/* ═════════ Guides: photo follows the guide ═════════ */
+const gImgs = $$('.guides-media img'), guides = $$('.guide');
+const setGuide = i => { gImgs.forEach((im, k) => im.classList.toggle('is-on', k === i)); guides.forEach((g, k) => g.classList.toggle('is-on', k === i)); };
+guides.forEach(g => { g.addEventListener('pointerenter', () => setGuide(+g.dataset.i)); g.addEventListener('focus', () => setGuide(+g.dataset.i)); });
+
+/* ═════════ Look closer (loupe) ═════════ */
+const lf = $('#loupe-fig'), lens = $('.loupe', lf), limg = $('#loupe-img'), ZOOM = 2.6;
+if (!fine) $('.loupe-hint', lf).textContent = 'Touch and drag on the photo to look closer';
+lens.style.backgroundImage = `url("${limg.src.replace('w=1600', 'w=3000')}")`;
+function moveLens(e){
+  const r = lf.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+  const iw = limg.naturalWidth || 3, ih = limg.naturalHeight || 2, cover = Math.max(r.width / iw, r.height / ih);
+  const offX = (iw * cover - r.width) / 2, offY = (ih * cover - r.height) / 2, L = lens.offsetWidth;
+  lens.style.backgroundSize = `${iw * cover * ZOOM}px ${ih * cover * ZOOM}px`;
+  lens.style.backgroundPosition = `${-((x + offX) * ZOOM - L / 2)}px ${-((y + offY) * ZOOM - L / 2)}px`;
+  lens.style.transform = `translate(${x - L / 2}px, ${y - L / 2}px)`;
+}
+lf.addEventListener('pointerenter', e => { lf.classList.add('is-on'); moveLens(e); });
+lf.addEventListener('pointermove', moveLens);
+lf.addEventListener('pointerleave', () => lf.classList.remove('is-on'));
+lf.addEventListener('pointerup', e => { if (e.pointerType !== 'mouse') lf.classList.remove('is-on'); });
+
+/* ═════════ FAQ slide ═════════ */
+$$('.faq details').forEach(d => {
+  const s = $('summary', d), body = $('.faq-body', d);
+  s.addEventListener('click', e => {
+    if (reduce || !window.gsap) return;
+    e.preventDefault();
+    if (d.open) gsap.to(body, { height: 0, duration: .3, ease: 'power2.inOut', onComplete: () => { d.open = false; body.style.height = ''; } });
+    else { d.open = true; gsap.fromTo(body, { height: 0 }, { height: 'auto', duration: .45, ease: 'power3.out', onComplete: () => body.style.height = '' }); }
+  });
+});
+
+/* ═════════ Newsletter (sign-up and error states) ═════════ */
+const news = $('#news'), nIn = $('#email'), nMsg = $('#news-msg');
+news.addEventListener('submit', e => {
+  e.preventDefault();
+  const ok = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(nIn.value.trim());
+  nIn.setAttribute('aria-invalid', !ok); nMsg.classList.toggle('err', !ok);
+  nMsg.textContent = ok ? 'Thank you. You are on the list.' : 'Enter an email address like name@example.com.';
+  if (ok){ dl('newsletter_signup'); nIn.value = ''; }
+});
+
+/* ═════════ GA4 events from the doc's build notes ═════════ */
+const track = (sel, event, extra) => $$(sel).forEach(a => a.addEventListener('click', () => dl(event, extra ? extra(a) : {})));
+track('.prod .link', 'enquire_click', a => ({ rug: a.closest('.prod').dataset.name }));
+track('a[href*="wa.me"]', 'whatsapp_click');
+track('a[href="#viewing"], a[href="/book-a-viewing/"]', 'viewing_book');
+track('a[href="/bespoke-rugs/"]', 'bespoke_brief_start');
+track('.card-dark .btn, [data-trade]', 'trade_apply');
+track('.panel', 'shop_by_size_click', a => ({ size: new URL(a.href, location.href).searchParams.get('size') || new URL(a.href, location.href).searchParams.get('room') }));
+
+if (reduce || !window.gsap || !window.ScrollTrigger) return;
+gsap.registerPlugin(ScrollTrigger, window.SplitText);
+const hasSplit = !!window.SplitText;
+
+/* ═════════ Smooth scroll, progress ═════════ */
+if (window.Lenis){
+  lenis = new Lenis({ lerp: .09, anchors: { offset: -(window.innerHeight < 700 ? 48 : 64) } });
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(t => lenis.raf(t * 1000));
+  gsap.ticker.lagSmoothing(0);
+}
+gsap.to('.progress', { scaleX: 1, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: .3 } });
+
+/* ═════════ Text ═════════ */
+if (hasSplit){
+  SplitText.create('#hero-title', { type: 'lines', mask: 'lines', autoSplit: true,
+    onSplit: s => gsap.from(s.lines, { yPercent: 110, duration: 1.4, ease: 'expo.out', stagger: .1, delay: .2 }) });
+  $$('[data-lines]').forEach(el => SplitText.create(el, { type: 'lines', mask: 'lines', autoSplit: true,
+    onSplit: s => gsap.from(s.lines, { yPercent: 110, duration: 1.2, ease: 'expo.out', stagger: .08, scrollTrigger: { trigger: el, start: 'top 90%', once: true } }) }));
+  $$('[data-chars]').forEach(el => SplitText.create(el, { type: 'words,chars', mask: 'chars', autoSplit: true,
+    onSplit: s => gsap.from(s.chars, { yPercent: 110, duration: 1, ease: 'expo.out', stagger: .02, scrollTrigger: { trigger: el, start: 'top 88%', once: true } }) }));
+}
+gsap.fromTo('.hero-fade', { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 1.1, ease: 'power3.out', stagger: .1, delay: .7, clearProps: 'opacity,transform' });
+gsap.from('.hero-media', { scale: 1.15, duration: 2.2, ease: 'expo.out' });
+
+const mm = gsap.matchMedia();
+
+/* ═════════ Desktop scenes (pinned, scroll-scrubbed) ═════════ */
+mm.add('(min-width: 1024px) and (min-height: 600px)', () => {
+  // Hero: the film draws back into a frame
+  gsap.timeline({ scrollTrigger: { trigger: '.hero', start: 'top top', end: '+=55%', scrub: .5, pin: true } })
+    .to('.hero-media', { clipPath: 'inset(9% 14% 9% 14%)', ease: 'none' }, 0)
+    .to('.hero-media video, .hero-media img', { scale: 1.12, ease: 'none' }, 0)
+    .to('.hero-body', { yPercent: -16, opacity: 0, ease: 'none' }, 0);
+
+  // Bespoke: a small window of loom film grows to full screen; steps light up in turn
+  const b = gsap.timeline({ scrollTrigger: { trigger: '.bespoke', start: 'top top', end: '+=200%', scrub: .6, pin: true } });
+  b.fromTo('.bespoke-film', { clipPath: 'inset(24% 34% 24% 34%)' }, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'power2.inOut', duration: 1 }, 0)
+   .fromTo('.bespoke-film video', { scale: 1.4 }, { scale: 1, ease: 'power2.inOut', duration: 1 }, 0)
+   .fromTo('.bespoke-shade', { opacity: 0 }, { opacity: 1, duration: .5 }, .5)
+   .fromTo('.bespoke-top', { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .5 }, .7);
+  $$('.steps li').forEach((li, i) => b.fromTo(li, { opacity: .15, y: 40 }, { opacity: 1, y: 0, duration: .4 }, 1.1 + i * .35));
+  b.fromTo('.bespoke-foot', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: .4 }, 2.6);
+
+  // Proof: start inside the knots, pull back to the whole rug; proofs arrive one by one
+  gsap.timeline({ scrollTrigger: { trigger: '.proof', start: 'top top', end: '+=110%', scrub: .6, pin: true } })
+    .fromTo('#loupe-img', { scale: 2.6 }, { scale: 1, ease: 'power2.out', duration: 1.2 }, 0)
+    .from('.proofs > div', { opacity: 0, y: 30, stagger: .2, duration: .4 }, .3)
+    .from('.proof .btn', { opacity: 0, y: 16, duration: .3 }, 1.1);
+
+  // Trade + project: the project card slides over the trade card
+  gsap.to('.card-dark', { scale: .93, filter: 'brightness(.55)', ease: 'none', scrollTrigger: { trigger: '.card-light', start: 'top bottom', end: 'top top+=90', scrub: true } });
+
+  // Guides: the photo follows the guide passing the middle of the screen
+  guides.forEach((g, i) => ScrollTrigger.create({ trigger: g, start: 'top 60%', end: 'bottom 60%', onToggle: s => s.isActive && setGuide(i) }));
+});
+
+/* ═════════ Smaller screens: no pins ═════════ */
+mm.add('(max-width: 1023px), (max-height: 599px)', () => {
+  gsap.fromTo('.hero-media video, .hero-media img', { yPercent: 0 }, { yPercent: 12, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+  $$('.steps li, .proofs > div').forEach(el => gsap.fromTo(el, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .9, ease: 'power3.out', clearProps: 'opacity,transform', scrollTrigger: { trigger: el, start: 'top 92%', once: true } }));
+  gsap.fromTo('.bespoke-film', { clipPath: 'inset(12% 10% 12% 10%)' }, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'none', scrollTrigger: { trigger: '.bespoke', start: 'top bottom', end: 'top 20%', scrub: true } });
+});
+
+/* ═════════ All sizes ═════════ */
+mm.add('all', () => {
+  // Product cards rise in turn, then hand control back to CSS
+  $$('.grid4').forEach(g => gsap.fromTo($$('.prod', g), { opacity: 0, y: 36 }, { opacity: 1, y: 0, duration: .9, ease: 'power3.out', stagger: .08, clearProps: 'opacity,transform', scrollTrigger: { trigger: g, start: 'top 88%', once: true } }));
+  gsap.fromTo('.service li', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: .7, ease: 'power3.out', stagger: .08, clearProps: 'opacity,transform', scrollTrigger: { trigger: '.service', start: 'top 92%', once: true } });
+  // Photos wipe up into place
+  $$('.curtain').forEach(f => {
+    const img = $('img', f);
+    gsap.fromTo(f, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.3, ease: 'expo.inOut', clearProps: 'clipPath', scrollTrigger: { trigger: f, start: 'top 90%', once: true } });
+    gsap.fromTo(img, { scale: 1.25 }, { scale: 1, duration: 1.7, ease: 'expo.out', clearProps: 'transform', scrollTrigger: { trigger: f, start: 'top 90%', once: true } });
+  });
+  // Artisan columns drift at different speeds
+  $$('[data-drift]').forEach(li => gsap.to(li, { yPercent: +li.dataset.drift, ease: 'none', scrollTrigger: { trigger: '.columns', start: 'top bottom', end: 'bottom top', scrub: true } }));
+  // Size / room panels rise in turn
+  gsap.fromTo('#set-size .panel', { yPercent: 40, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 1.1, ease: 'expo.out', stagger: .08, clearProps: 'opacity,transform', scrollTrigger: { trigger: '#set-size', start: 'top 88%', once: true } });
+  // Founder quote fills in as you read; footer wordmark rises
+  if (hasSplit){
+    const q = SplitText.create('.founder .fill', { type: 'words' });
+    gsap.fromTo(q.words, { opacity: .15 }, { opacity: 1, stagger: .1, ease: 'none', scrollTrigger: { trigger: '.founder blockquote', start: 'top 85%', end: 'bottom 50%', scrub: true } });
+    const g = SplitText.create('.giant', { type: 'chars' });
+    gsap.from(g.chars, { yPercent: 100, duration: 1.3, ease: 'expo.out', stagger: .03, scrollTrigger: { trigger: '.giant', start: 'top 98%', once: true } });
+  }
+  gsap.fromTo('.guide', { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 1, ease: 'power3.out', stagger: .12, clearProps: 'opacity,transform', scrollTrigger: { trigger: '.guides ul', start: 'top 88%', once: true } });
+  gsap.fromTo('.faq details', { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: .8, ease: 'power3.out', stagger: .06, clearProps: 'opacity,transform', scrollTrigger: { trigger: '.faq-grid', start: 'top 85%', once: true } });
+  // CTA: the burgundy band spreads open like ink
+  gsap.fromTo('.cta', { clipPath: 'inset(16% 22% 16% 22%)' }, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'none', scrollTrigger: { trigger: '.cta-wrap', start: 'top bottom', end: 'top 25%', scrub: .5 } });
+});
+
+document.fonts && document.fonts.ready.then(() => ScrollTrigger.refresh());
+})();
+</script>
+</body>
+</html>
